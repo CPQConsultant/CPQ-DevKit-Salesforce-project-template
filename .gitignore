@@ -1,6 +1,5 @@
 node_modules
 yarn.lock
 
-# TODO: uncomment this before doing a `git commit`
-#.env
-#.qcp
+.env
+.qcp
