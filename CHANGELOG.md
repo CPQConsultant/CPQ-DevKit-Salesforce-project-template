@@ -1,6 +1,10 @@
 # Change Log
 
-[unreleased]
+### 2.0.0
+
+**2023-02-10**
+
+- Decoupled the project files from the Visual Studio Code extension files.
 
 ### 1.0.4
 

@@ -1,5 +1,6 @@
-out
 node_modules
-.vscode-test/
-*.vsix
-dist
+yarn.lock
+
+# TODO: uncomment this before doing a `git commit`
+#.env
+#.qcp

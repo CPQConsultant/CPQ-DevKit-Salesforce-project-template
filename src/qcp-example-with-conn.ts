@@ -16,7 +16,7 @@
  * @returns {Promise}
  */
 export function onAfterCalculate(quoteModel, quoteLineModels, conn) {
-  return new Promise((resolve, reject) => {
+  return new Promise<void>((resolve, reject) => {
     // Perform logic here and resolve promise
 
     // Print out conn object so you can look and see what is available to access.

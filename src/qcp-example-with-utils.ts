@@ -26,7 +26,7 @@ function debug(...args) {
  * @returns {Promise}
  */
 export function onInit(quoteLineModels) {
-  return new Promise((resolve, reject) => {
+  return new Promise<void>((resolve, reject) => {
     // Perform logic here and resolve promise
     resolve();
   });
@@ -39,7 +39,7 @@ export function onInit(quoteLineModels) {
  * @returns {Promise}
  */
 export function onBeforeCalculate(quoteModel, quoteLineModels) {
-  return new Promise((resolve, reject) => {
+  return new Promise<void>((resolve, reject) => {
     // Perform logic here and resolve promise
     resolve();
   });

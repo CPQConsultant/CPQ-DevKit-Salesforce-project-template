@@ -10,38 +10,13 @@
  * environments. This means that one cannot expect browser global variables such as window to be available.
  */
 
-// *********************IS Field Editable ********************//
-// https:https://developer.salesforce.com/docs/atlas.en-us.cpq_dev_plugins.meta/cpq_dev_plugins/cpq_page_security_plugin.htm
-
-export function isFieldVisible(fieldName, line) {
-  if (fieldName === 'Security_Test__c') {
-    return line.Security_Level__c !== 'Hidden';
-  }
-
-  // Return null to ignore checking visibility for this specific field
-  return null;
-}
-
-export function isFieldEditable(fieldName, line) {
-  //console.log(fieldName);
-  //console.log(line);
-  // List Price Not Editable at Bundle Level
-  if (fieldName === 'SBQQ__ListPrice__c' && line.SBQQ__Bundle__c === true) {
-    return false;
-  }
-
-  return null;
-}
-
-// ********************* QUOTE CALCULATOR PLUGIN - CORE ********************//
-
 /**
  * This method is called by the calculator when the plugin is initialized.
  * @param {QuoteLineModel[]} quoteLineModels An array containing JS representations of all lines in a quote
  * @returns {Promise}
  */
 export function onInit(quoteLineModels) {
-  return new Promise((resolve, reject) => {
+  return new Promise<void>((resolve, reject) => {
     // Perform logic here and resolve promise
     resolve();
   });
@@ -54,7 +29,7 @@ export function onInit(quoteLineModels) {
  * @returns {Promise}
  */
 export function onBeforeCalculate(quoteModel, quoteLineModels) {
-  return new Promise((resolve, reject) => {
+  return new Promise<void>((resolve, reject) => {
     // Perform logic here and resolve promise
     resolve();
   });
@@ -67,7 +42,7 @@ export function onBeforeCalculate(quoteModel, quoteLineModels) {
  * @returns {Promise}
  */
 export function onBeforePriceRules(quoteModel, quoteLineModels) {
-  return new Promise((resolve, reject) => {
+  return new Promise<void>((resolve, reject) => {
     // Perform logic here and resolve promise
     resolve();
   });
@@ -80,7 +55,7 @@ export function onBeforePriceRules(quoteModel, quoteLineModels) {
  * @returns {Promise}
  */
 export function onAfterPriceRules(quoteModel, quoteLineModels) {
-  return new Promise((resolve, reject) => {
+  return new Promise<void>((resolve, reject) => {
     // Perform logic here and resolve promise
     resolve();
   });
@@ -94,7 +69,7 @@ export function onAfterPriceRules(quoteModel, quoteLineModels) {
  * @returns {Promise}
  */
 export function onAfterCalculate(quoteModel, quoteLineModels) {
-  return new Promise((resolve, reject) => {
+  return new Promise<void>((resolve, reject) => {
     // Perform logic here and resolve promise
     resolve();
   });
