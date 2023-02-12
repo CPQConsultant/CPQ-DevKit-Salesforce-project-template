@@ -2,7 +2,7 @@
 
 CPQ DevKit for Salesforce - Project Template can be used to work more efficiently with the Salesforce CPQ's [Javascript Quote Calculator Plugin](https://developer.salesforce.com/docs/atlas.en-us.cpq_plugins.meta/cpq_plugins/cpq_dev_jsqcp_parent.htm).
 
-This repository is based on the proposed format by by [Austin Turner](https://github.com/paustint/) to the [SFDC QCP Extension](https://github.com/paustint/sfdc-qcp-vscode-extension) for Visual Studio Code.
+This repository is based on the proposed format by [Austin Turner](https://github.com/paustint/) to the [SFDC QCP Extension](https://github.com/paustint/sfdc-qcp-vscode-extension) for Visual Studio Code.
 
 ## Setup
 
